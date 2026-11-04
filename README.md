@@ -5,8 +5,8 @@
     <em>Tecnologia da Informação | Desenvolvimento de Sistemas</em>
   </p>
   <p>
-    <i>Choose your language:</i><br>
-    <i>Escolha seu idioma:</i><br>
+    <b>Choose your language:</b><br>
+    <b>Escolha seu idioma:</b><br>
     <a href="#english">English</a> | <a href="#portuguese">Português</a>
   </p>
 </div>
@@ -16,31 +16,31 @@
 <div align="center">
   <h3>Tech Stack & Tools<br>Tecnologias & Ferramentas</h3>
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
+  <img src="https://img.shields.io/badge/WSL-0a97f5?style=for-the-badge&logo=linux&logoColor=white" alt="WSL" />
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" alt="Cloudflare" />
   <img src="https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white" alt="Google Chrome" />
   <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
   <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Notepad++-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black" alt="Notepad++" />
-  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" alt="Cloudflare" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
-  <img src="https://img.shields.io/badge/WSL-0a97f5?style=for-the-badge&logo=linux&logoColor=white" alt="WSL" />
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/XAMPP-F37623?style=for-the-badge&logo=xampp&logoColor=white" alt="XAMPP" />
-  <img src="https://img.shields.io/badge/Windows%20Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Windows Terminal" />
-  <img src="https://img.shields.io/badge/Antigravity_CLI-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity CLI" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
+  <img src="https://img.shields.io/badge/Windows%20Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Windows Terminal" />
+  <img src="https://img.shields.io/badge/Notepad++-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black" alt="Notepad++" />
+  <img src="https://img.shields.io/badge/XAMPP-F37623?style=for-the-badge&logo=xampp&logoColor=white" alt="XAMPP" />
+  <img src="https://img.shields.io/badge/Antigravity_CLI-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity CLI" />
 </div>
 
 <br/>
-
----
+<hr/>
+<br/>
 
 <div align="center">
   <h2>My Site<br>Meu Site</h2>
@@ -50,8 +50,6 @@
 </div>
 
 <br/>
-
----
 
 <div align="center">
   <h2>Featured Repositories<br>Repositórios em Destaque</h2>
@@ -65,10 +63,14 @@
 </div>
 
 <br/>
+<hr/>
+<br/>
 
----
+<div id="english"></div>
 
-<h2 id="english">Profile</h2>
+<div align="center">
+  <h2>Profile</h2>
+</div>
 
 **Education:**
 - **Bachelor of Information Technology** - UNIVESP
@@ -77,10 +79,14 @@
 - **Foundations of Generative AI (Google Cloud)** - SENAI
 
 <br/>
+<hr/>
+<br/>
 
----
+<div id="portuguese"></div>
 
-<h2 id="portuguese">Perfil</h2>
+<div align="center">
+  <h2>Perfil</h2>
+</div>
 
 **Formação Acadêmica:**
 - **Bacharelado em Tecnologia da Informação** - UNIVESP
@@ -89,8 +95,8 @@
 - **Fundamentos de Inteligência Artificial Generativa (Google Cloud)** - SENAI
 
 <br/>
-
----
+<hr/>
+<br/>
 
 <div align="center">
   <h2>GitHub Stats<br>Estatísticas do GitHub</h2>
@@ -99,8 +105,6 @@
 </div>
 
 <br/>
-
----
 
 <div align="center">
   <h3>Contact<br>Contato</h3>
