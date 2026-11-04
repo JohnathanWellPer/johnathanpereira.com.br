@@ -22,29 +22,29 @@
     <style>
         /* CSS Reset e Variáveis de Tema */
         :root {
-            --bg-main: #f0f4f8;
-            --bg-card: #ffffff;
+            --bg-main: #f8f9fa; /* Fundo mais suave para Light Mode */
+            --bg-card: #ffffff; /* Fundo puro da Marca Padrão */
             --sidebar-bg: #ffffff;
-            --text-main: #333333;
-            --text-muted: #666666;
-            --accent-color: #2563EB;
-            --accent-gradient: linear-gradient(135deg, #2563EB, #00FF66);
-            --border-color: #D1D5DB;
+            --text-main: #1a1a1a;
+            --text-muted: #5a5a5a;
+            --accent-color: #0044ff; /* Azul da logomarca */
+            --accent-gradient: linear-gradient(135deg, #0044ff, #00ff66); /* Degradê azul para verde */
+            --border-color: #e5e7eb;
             --sidebar-width: 300px;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.05);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.03);
         }
 
         .dark-mode {
-            --bg-main: #18181B;
-            --bg-card: #1f1f23;
-            --sidebar-bg: #1f1f23;
-            --text-main: #FAFAFA;
-            --text-muted: #6B7280;
-            --accent-color: #2563EB;
-            --border-color: #2a314d;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+            --bg-main: #020521; /* Azul escuro profundo da capa do LinkedIn */
+            --bg-card: #050812; /* Fundo quase preto para contraste */
+            --sidebar-bg: #050812;
+            --text-main: #f8f9fa;
+            --text-muted: #a0aab8;
+            --accent-color: #00ff66; /* Verde vibrante para destaque no escuro */
+            --border-color: #1a2245; /* Azul sutil para bordas */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.2);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -262,18 +262,6 @@
             content: "•"; color: var(--accent-color); font-weight: bold;
             position: absolute; left: 0;
         }
-        
-        .project-item { margin-bottom: 40px; border-bottom: 1px dashed var(--border-color); padding-bottom: 20px; }
-        .project-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .project-item h3 { font-size: 1.2rem; color: var(--text-main); margin-bottom: 10px;}
-        .project-item p { margin-bottom: 10px;}
-        
-        .btn-link {
-             display: inline-block; background: var(--accent-gradient); color: #ffffff; 
-             padding: 8px 16px; border-radius: 8px; text-decoration: none; 
-             font-weight: 600; font-size: 0.85rem; margin-top: 10px; transition: opacity 0.2s;
-        }
-        .btn-link:hover { opacity: 0.8; }
 
         .stats-container {
             display: flex; flex-direction: column; align-items: center; gap: 20px;
@@ -330,9 +318,6 @@
             </a>
             <a href="#education" class="nav-link">
                 🎓 <span data-lang="pt">Formação</span><span data-lang="en">Education</span>
-            </a>
-            <a href="#projects" class="nav-link">
-                🚀 <span data-lang="pt">Projetos em Destaque</span><span data-lang="en">Featured Projects</span>
             </a>
             <a href="#analytics" class="nav-link">
                 📊 <span data-lang="pt">Estatísticas</span><span data-lang="en">GitHub Stats</span>
@@ -488,124 +473,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- Projetos Acadêmicos & Ferramentas -->
-            <div id="projects" class="card">
-                <h2 class="section-title">
-                    <span data-lang="pt">Projetos & Ferramentas em Destaque</span>
-                    <span data-lang="en">Featured Projects & Tools</span>
-                </h2>
-                
-                <!-- PromptCraft Pro -->
-                <div class="project-item">
-                    <div data-lang="pt">
-                        <h3>PromptCraft Pro</h3>
-                        <p><strong>SENAI | Fundamentos de Inteligência Artificial Generativa (Google Cloud)</strong></p>
-                        <p>Uma ferramenta web client-side para estruturação rigorosa de prompts. Substitui textos livres por uma arquitetura mandatória (Persona, Objetivo, Contexto, Formato e Exemplos), mitigando alucinações da IA e facilitando o aprendizado <i>Few-shot</i>.</p>
-                    </div>
-                    <div data-lang="en">
-                        <h3>PromptCraft Pro</h3>
-                        <p><strong>SENAI | Generative AI Foundations (Google Cloud)</strong></p>
-                        <p>A client-side web tool for rigorous prompt structuring. Replaces free-text inputs with a mandatory architecture (Persona, Objective, Context, Format, and Examples), mitigating AI hallucinations and enabling <i>Few-shot</i> learning.</p>
-                    </div>
-                    <div class="badges-container-left">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-                        <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
-                    </div>
-                    <a href="https://github.com/JohnathanWellPer/senai-fundamentos_de_inteligencia_artificial_generativa_-_google_cloud/tree/main/PromptCraft_Pro" target="_blank" rel="noopener noreferrer" class="btn-link">
-                        <span data-lang="pt">Ver Repositório</span><span data-lang="en">View Repository</span>
-                    </a>
-                </div>
-
-                <!-- LGPD Data Anonymizer -->
-                <div class="project-item">
-                    <div data-lang="pt">
-                        <h3>LGPD Data Anonymizer</h3>
-                        <p><strong>UNIVESP | Ética, Cidadania e Sociedade (SOC100)</strong></p>
-                        <p>Script back-end CLI desenvolvido em Python para garantir conformidade corporativa. Lê bancos de dados sensíveis (CSV) e aplica mascaramento dinâmico em informações de identificação pessoal (PII) sem alterar os arquivos brutos originais.</p>
-                    </div>
-                    <div data-lang="en">
-                        <h3>LGPD Data Anonymizer</h3>
-                        <p><strong>UNIVESP | Ethics, Citizenship and Society (SOC100)</strong></p>
-                        <p>Backend CLI script developed in Python to ensure corporate compliance. Parses sensitive databases (CSV) and applies dynamic masking to Personally Identifiable Information (PII) without altering the original raw files.</p>
-                    </div>
-                    <div class="badges-container-left">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-                        <img src="https://img.shields.io/badge/Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Terminal" />
-                    </div>
-                    <a href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao/tree/main/LGPD_Data_Anonymizer" target="_blank" rel="noopener noreferrer" class="btn-link">
-                        <span data-lang="pt">Ver Repositório</span><span data-lang="en">View Repository</span>
-                    </a>
-                </div>
-                
-                <!-- LexiCore Dictionary -->
-                <div class="project-item">
-                    <div data-lang="pt">
-                        <h3>LexiCore Dictionary</h3>
-                        <p><strong>UNIVESP | Inglês (LET100)</strong></p>
-                        <p>Aplicação SPA que busca dados de vocabulário em tempo real via RESTful API assíncrona. Realiza parsing dinâmico de JSON para exibir classes gramaticais e executa pronúncias em áudio `.mp3` de forma nativa.</p>
-                    </div>
-                    <div data-lang="en">
-                        <h3>LexiCore Dictionary</h3>
-                        <p><strong>UNIVESP | English (LET100)</strong></p>
-                        <p>SPA application that fetches real-time vocabulary data via an asynchronous RESTful API. Performs dynamic JSON parsing to display Parts of Speech and executes native `.mp3` audio pronunciations.</p>
-                    </div>
-                    <div class="badges-container-left">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-                    </div>
-                    <a href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao/tree/main/LexiCore_Dictionary" target="_blank" rel="noopener noreferrer" class="btn-link">
-                        <span data-lang="pt">Ver Repositório</span><span data-lang="en">View Repository</span>
-                    </a>
-                </div>
-                
-                <!-- Text Democratizer -->
-                <div class="project-item">
-                    <div data-lang="pt">
-                        <h3>Text Democratizer</h3>
-                        <p><strong>UNIVESP | Leitura e Produção de Textos (LET110)</strong></p>
-                        <p>Auditor de legibilidade NLP zero-dependency em Python. Processa arquivos de texto aplicando a fórmula <i>Flesch Reading Ease</i> através de Regex para diagnosticar barreiras linguísticas e calcular a acessibilidade cognitiva do documento.</p>
-                    </div>
-                    <div data-lang="en">
-                        <h3>Text Democratizer</h3>
-                        <p><strong>UNIVESP | Reading and Text Production (LET110)</strong></p>
-                        <p>Zero-dependency NLP readability auditor in Python. Processes text files applying the <i>Flesch Reading Ease</i> formula via Regex to diagnose linguistic barriers and calculate the document's cognitive accessibility.</p>
-                    </div>
-                    <div class="badges-container-left">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-                        <img src="https://img.shields.io/badge/Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Terminal" />
-                    </div>
-                    <a href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao/tree/main/Text_Democratizer" target="_blank" rel="noopener noreferrer" class="btn-link">
-                        <span data-lang="pt">Ver Repositório</span><span data-lang="en">View Repository</span>
-                    </a>
-                </div>
-                
-                <!-- SetAnalyzer Pro -->
-                <div class="project-item">
-                    <div data-lang="pt">
-                        <h3>SetAnalyzer Pro</h3>
-                        <p><strong>UNIVESP | Matemática Básica (MMB002)</strong></p>
-                        <p>Processador lógico construído sob a Teoria dos Conjuntos. Utiliza os objetos `Set` nativos do ES6 para isolar interseções, uniões e diferenças de dados brutos corporativos, integrando-se nativamente à Clipboard API.</p>
-                    </div>
-                    <div data-lang="en">
-                        <h3>SetAnalyzer Pro</h3>
-                        <p><strong>UNIVESP | Basic Mathematics (MMB002)</strong></p>
-                        <p>Logical processor built upon Set Theory. Utilizes native ES6 `Set` objects to isolate intersections, unions, and differences of raw corporate data, integrating natively with the Clipboard API.</p>
-                    </div>
-                    <div class="badges-container-left">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-                    </div>
-                    <a href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao/tree/main/SetAnalyzer_Pro" target="_blank" rel="noopener noreferrer" class="btn-link">
-                        <span data-lang="pt">Ver Repositório</span><span data-lang="en">View Repository</span>
-                    </a>
-                </div>
-
-            </div>
 
             <!-- Estatísticas -->
             <div id="analytics" class="card text-center">
@@ -614,8 +481,8 @@
                     <span data-lang="en">GitHub Stats</span>
                 </h2>
                 <div class="stats-container">
-                    <img id="gh-stats" src="https://github-readme-stats-mu-two-29.vercel.app/api?username=JohnathanWellPer&show_icons=true&hide_border=true&title_color=0077B5&icon_color=0077B5&theme=default" alt="GitHub Stats" />
-                    <img id="gh-langs" src="https://github-readme-stats-mu-two-29.vercel.app/api/top-langs/?username=JohnathanWellPer&layout=compact&hide_border=true&title_color=0077B5&theme=default" alt="Top Languages" />
+                    <img id="gh-stats" src="https://github-readme-stats-mu-two-29.vercel.app/api?username=JohnathanWellPer&show_icons=true&hide_border=true&title_color=0044ff&icon_color=0044ff&theme=default" alt="GitHub Stats" />
+                    <img id="gh-langs" src="https://github-readme-stats-mu-two-29.vercel.app/api/top-langs/?username=JohnathanWellPer&layout=compact&hide_border=true&title_color=0044ff&theme=default" alt="Top Languages" />
                 </div>
             </div>
 
@@ -663,8 +530,8 @@
         const ghStats = document.getElementById('gh-stats');
         const ghLangs = document.getElementById('gh-langs');
         
-        const baseUrlStats = "https://github-readme-stats-mu-two-29.vercel.app/api?username=JohnathanWellPer&show_icons=true&hide_border=true&title_color=0077B5&icon_color=0077B5";
-        const baseUrlLangs = "https://github-readme-stats-mu-two-29.vercel.app/api/top-langs/?username=JohnathanWellPer&layout=compact&hide_border=true&title_color=0077B5";
+        const baseUrlStats = "https://github-readme-stats-mu-two-29.vercel.app/api?username=JohnathanWellPer&show_icons=true&hide_border=true&title_color=00ff66&icon_color=00ff66";
+        const baseUrlLangs = "https://github-readme-stats-mu-two-29.vercel.app/api/top-langs/?username=JohnathanWellPer&layout=compact&hide_border=true&title_color=00ff66";
 
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             themeCheckbox.checked = true;
@@ -689,8 +556,9 @@
         function disableDarkMode() {
             body.classList.remove('dark-mode');
             siteLogo.src = 'images/logo-default.png';
-            ghStats.src = baseUrlStats + "&theme=default";
-            ghLangs.src = baseUrlLangs + "&theme=default";
+            /* Revertendo para os tons claros nas estatísticas quando sair do dark mode */
+            ghStats.src = "https://github-readme-stats-mu-two-29.vercel.app/api?username=JohnathanWellPer&show_icons=true&hide_border=true&title_color=0044ff&icon_color=0044ff&theme=default";
+            ghLangs.src = "https://github-readme-stats-mu-two-29.vercel.app/api/top-langs/?username=JohnathanWellPer&layout=compact&hide_border=true&title_color=0044ff&theme=default";
         }
 
         // --- LÓGICA DE ROLAGEM SUAVE ---
