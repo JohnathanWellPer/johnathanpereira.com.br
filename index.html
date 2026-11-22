@@ -292,6 +292,76 @@
         .site-footer a:hover {
             text-decoration: underline;
         }
+
+        /* --- RECRUITER SCANABILITY HELPERS --- */
+        .hero-availability {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            padding: 6px 16px;
+            display: inline-block;
+            transition: background-color 0.4s ease, border-color 0.4s ease;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+            margin-top: 22px;
+            text-align: left;
+        }
+
+        .project-highlight {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 8px;
+            transition: background-color 0.4s ease, border-color 0.4s ease;
+        }
+
+        .project-highlight h3 {
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        .project-highlight p {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            margin-top: 4px;
+            font-size: 0.8rem;
+        }
+
+        .project-stack {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="lang-pt">
@@ -357,6 +427,10 @@
                     <div class="subtitle">
                         <p data-lang="pt">Tecnologia da Informação | Desenvolvimento de Sistemas</p>
                         <p data-lang="en">Information Technology | Systems Development</p>
+                    </div>
+                    <div class="hero-availability">
+                        <span data-lang="pt">Foco: Estágio &amp; Vagas Iniciais (TI, Dev, Automação, Dados, Suporte) • Remoto ou Pirassununga/SP e Região</span>
+                        <span data-lang="en">Focus: Internships &amp; Entry-Level (IT, Dev, Automation, Data, Support) • Remote or Pirassununga/SP Region</span>
                     </div>
                 </div>
             </div>
@@ -446,8 +520,8 @@
             <!-- Repositórios em Destaque -->
             <div id="repositories" class="card text-center">
                 <h2 class="section-title">
-                    <span data-lang="pt">Repositórios Base</span>
-                    <span data-lang="en">Root Repositories</span>
+                    <span data-lang="pt">Repositórios Base &amp; Projetos Práticos</span>
+                    <span data-lang="en">Root Repositories &amp; Practical Projects</span>
                 </h2>
                 <div class="badges-container">
                     <a href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao" target="_blank" rel="noopener noreferrer">
@@ -456,6 +530,63 @@
                     <a href="https://github.com/JohnathanWellPer/etec-desenvolvimento_de_sistemas" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.shields.io/badge/ETEC-Systems_Development_Technician-B30000?style=for-the-badge&logo=github&logoColor=white" alt="ETEC Portfolio">
                     </a>
+                    <a href="https://github.com/JohnathanWellPer/senai-fundamentos_de_inteligencia_artificial_generativa_-_google_cloud" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/SENAI-Generative_AI_Google_Cloud-005CA9?style=for-the-badge&logo=github&logoColor=white" alt="SENAI Portfolio">
+                    </a>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-highlight">
+                        <div>
+                            <h3>LGPD Data Anonymizer</h3>
+                            <p data-lang="pt">Script CLI em Python (módulos nativos <code>csv</code> e <code>os</code>) que mascara dados sensíveis (CPF, e-mail, salário) gerando saída anonimizada sem sobrescrever o arquivo original.</p>
+                            <p data-lang="en">Python CLI script (native <code>csv</code> and <code>os</code> modules) that masks sensitive PII fields (CPF, email, salary) into a new output file without overwriting raw data.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-stack">Python • CSV • LGPD</span>
+                            <a class="project-link" href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao" target="_blank" rel="noopener noreferrer">
+                                <span data-lang="pt">Ver no GitHub ↗</span><span data-lang="en">View on GitHub ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-highlight">
+                        <div>
+                            <h3>TCP/IP Encapsulator</h3>
+                            <p data-lang="pt">Simulador CLI em Python do ciclo completo de encapsulamento de pacotes (HTTP, TCP, IP e Frame) e desmultiplexagem reversa entre dois hosts de rede.</p>
+                            <p data-lang="en">Python CLI simulator demonstrating end-to-end packet encapsulation (HTTP, TCP, IP, Frame) and reverse demultiplexing between two network hosts.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-stack">Python • TCP/IP • CLI</span>
+                            <a class="project-link" href="https://github.com/JohnathanWellPer/univesp-tecnologia_da_informacao" target="_blank" rel="noopener noreferrer">
+                                <span data-lang="pt">Ver no GitHub ↗</span><span data-lang="en">View on GitHub ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-highlight">
+                        <div>
+                            <h3>DB Setup Wizard</h3>
+                            <p data-lang="pt">Interface web em PHP + MySQL (XAMPP) que automatiza a inicialização de banco de dados via comandos DDL com tratamento defensivo de exceções (<code>try...catch</code>).</p>
+                            <p data-lang="en">PHP + MySQL (XAMPP) web interface that automates database initialization via DDL commands with defensive exception handling (<code>try...catch</code>).</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-stack">PHP • MySQL • XAMPP</span>
+                            <a class="project-link" href="https://github.com/JohnathanWellPer/etec-desenvolvimento_de_sistemas" target="_blank" rel="noopener noreferrer">
+                                <span data-lang="pt">Ver no GitHub ↗</span><span data-lang="en">View on GitHub ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-highlight">
+                        <div>
+                            <h3>PromptCraft Pro</h3>
+                            <p data-lang="pt">Ferramenta web em JavaScript puro para estruturar prompts de IA (Persona, Objetivo, Contexto, Formato e Exemplos) com validação obrigatória de contexto.</p>
+                            <p data-lang="en">Vanilla JavaScript web tool for building structured AI prompts (Persona, Objective, Context, Format, and Examples) with mandatory context validation.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-stack">HTML5 • CSS3 • JavaScript</span>
+                            <a class="project-link" href="https://github.com/JohnathanWellPer/senai-fundamentos_de_inteligencia_artificial_generativa_-_google_cloud" target="_blank" rel="noopener noreferrer">
+                                <span data-lang="pt">Ver no GitHub ↗</span><span data-lang="en">View on GitHub ↗</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -463,23 +594,41 @@
             <div id="education" class="card">
                 <div data-lang="pt">
                     <h2 class="section-title">Perfil</h2>
-                    <p><strong>Formação Acadêmica:</strong></p>
+                    <p style="margin-bottom: 16px;">Estudante de Tecnologia da Informação (UNIVESP) e Técnico em Desenvolvimento de Sistemas (ETEC), com formação técnica em Comércio (ETEC) e capacitações em Inteligência Artificial, Python, Excel e Marketing Digital. Atuação pontual em suporte técnico de TI e desenvolvimento de projetos próprios no GitHub e portfólio online, com foco em estágio e vagas iniciais em Desenvolvimento de Sistemas ou TI. Baseado em Pirassununga, SP.</p>
+                    <p><strong>Formação Acadêmica e Cursos Complementares:</strong></p>
                     <ul>
-                        <li><strong>Bacharelado em Tecnologia da Informação</strong> - UNIVESP (concluindo o 3º semestre de 6)</li>
-                        <li><strong>Técnico em Desenvolvimento de Sistemas</strong> - ETEC (concluindo o 2º módulo de 3)</li>
-                        <li><strong>Técnico em Comércio</strong> - ETEC</li>
+                        <li><strong>Bacharelado em Tecnologia da Informação</strong> - UNIVESP (2025 – 2028 | concluindo o 3º semestre de 6)</li>
+                        <li><strong>Técnico em Desenvolvimento de Sistemas</strong> - ETEC (2026 – 2027 | concluindo o 2º módulo de 3)</li>
+                        <li><strong>Técnico em Comércio</strong> - ETEC (Concluído em Jul/2026)</li>
                         <li><strong>Fundamentos de Inteligência Artificial Generativa (Google Cloud)</strong> - SENAI</li>
+                        <li><strong>Cursos Complementares:</strong> Capacitações e certificações em Inteligência Artificial (SENAI e IBM / Instituto Eldorado), Python, Excel, Marketing Digital e ferramentas de produtividade (LinkedIn Learning e afins).</li>
                     </ul>
+                    <p style="margin-top: 16px;"><strong>Experiência:</strong></p>
+                    <ul>
+                        <li><strong>Suporte Técnico em TI (Atuação Pontual / Sob Demanda | Jul/2025 – Atual):</strong> Formatação, limpeza, montagem e manutenção de computadores e notebooks conforme demanda.</li>
+                        <li><strong>3AM IT Services — Técnico de Suporte em Campo (Abr/2026 – Atual):</strong> Cadastro ativo para atendimentos técnicos presenciais sob demanda conforme chamados.</li>
+                        <li><strong>Marketing Digital (Freelancer / Autônomo | Jul/2024 – Jun/2025):</strong> Atuação como freelancer em marketing digital, análise, consultoria, social media e criação de conteúdo para negócios locais e digitais, incluindo contrato temporário de 4 meses em modelo híbrido liderando e apoiando a equipe na entrega de demandas atrasadas.</li>
+                    </ul>
+                    <p style="margin-top: 16px;"><strong>Idiomas:</strong> Português (nativo) | Inglês (intermediário / leitura técnica com apoio).</p>
                 </div>
                 <div data-lang="en">
                     <h2 class="section-title">Profile</h2>
-                    <p><strong>Education:</strong></p>
+                    <p style="margin-bottom: 16px;">Information Technology undergraduate (UNIVESP) and Systems Development technical student (ETEC), holding a Technical Degree in Commerce (ETEC) and training in Artificial Intelligence, Python, Excel, and Digital Marketing. Works on demand in IT technical support while building and publishing projects on GitHub and this portfolio, targeting internships and entry-level roles in Systems Development or IT. Based in Pirassununga, SP, Brazil.</p>
+                    <p><strong>Education &amp; Complementary Courses:</strong></p>
                     <ul>
-                        <li><strong>Bachelor of Information Technology</strong> - UNIVESP (currently finishing semester 3 of 6)</li>
-                        <li><strong>Technical Degree in Systems Development</strong> - ETEC (currently finishing module 2 of 3)</li>
-                        <li><strong>Technical Degree in Commerce</strong> - ETEC</li>
+                        <li><strong>Bachelor of Information Technology</strong> - UNIVESP (2025 – 2028 | currently finishing semester 3 of 6)</li>
+                        <li><strong>Technical Degree in Systems Development</strong> - ETEC (2026 – 2027 | currently finishing module 2 of 3)</li>
+                        <li><strong>Technical Degree in Commerce</strong> - ETEC (Completed Jul/2026)</li>
                         <li><strong>Foundations of Generative AI (Google Cloud)</strong> - SENAI</li>
+                        <li><strong>Complementary Courses:</strong> Training and certifications in Artificial Intelligence (SENAI and IBM / Instituto Eldorado), Python, Excel, Digital Marketing, and productivity tools (LinkedIn Learning and similar platforms).</li>
                     </ul>
+                    <p style="margin-top: 16px;"><strong>Experience:</strong></p>
+                    <ul>
+                        <li><strong>IT Technical Support (On-Demand / Freelance | Jul/2025 – Present):</strong> On-demand formatting, cleaning, assembly, and maintenance of desktop PCs and laptops.</li>
+                        <li><strong>3AM IT Services — Field Support Technician (Apr/2026 – Present):</strong> Active registration for on-demand on-site technical support dispatches.</li>
+                        <li><strong>Digital Marketing (Freelancer / Independent | Jul/2024 – Jun/2025):</strong> Freelance digital marketing analyst, consultant, social media manager, and content creator for local and online businesses, including a 4-month hybrid contract leading and supporting the marketing team to deliver overdue demands.</li>
+                    </ul>
+                    <p style="margin-top: 16px;"><strong>Languages:</strong> Portuguese (native) | English (intermediate / technical reading with support).</p>
                 </div>
             </div>
 
